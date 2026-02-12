@@ -1,0 +1,22 @@
+INSERT INTO
+    categories (name, parent_id)
+VALUES ('Electronics', NULL),
+    ('Home & Garden', NULL),
+    ('Fashion', NULL),
+    ('Sports & Outdoors', NULL),
+    ('Toys & Hobbies', NULL),
+    ('Computers', 1),
+    ('Smartphones', 1),
+    ('Audio', 1),
+    ('Kitchen Appliances', 2),
+    ('Furniture', 2),
+    ('Gardening Tools', 2),
+    ('Mens Clothing', 3),
+    ('Womens Clothing', 3),
+    ('Accessories', 3),
+    ('Laptops', 6),
+    ('PC Components', 6),
+    ('iPhone', 7),
+    ('Android', 7),
+    ('Headphones', 8),
+    ('Office Chairs', 10);
