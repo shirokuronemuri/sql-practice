@@ -64,8 +64,8 @@ CREATE TYPE payment_status AS ENUM (
 CREATE TABLE IF NOT EXISTS payments (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     order_id INT REFERENCES orders (id) NOT NULL,
-    payment_method payment_method NOT NULL, -- card, paypal, crypto
-    payment_status payment_status NOT NULL, -- paid, failed, refunded
+    payment_method payment_method NOT NULL,
+    payment_status payment_status NOT NULL,
     paid_at TIMESTAMP
 );
 

@@ -15051,6 +15051,7 @@ WHERE
             oi.order_id = o.id
     );
 
+-- recalculating order total but skipping some of them
 UPDATE orders o
 SET
     total_amount = (
