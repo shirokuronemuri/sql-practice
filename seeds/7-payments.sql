@@ -5,7 +5,11 @@ INSERT INTO
         payment_status,
         paid_at
     )
-SELECT p.order_id, p.payment_method, p.payment_status, paid_at
+SELECT
+    p.order_id,
+    p.payment_method::payment_method,
+    p.payment_status::payment_status,
+    paid_at
 FROM (
         VALUES (
                 1, 'card', 'failed', '2022-01-26 13:11:37'::timestamp
